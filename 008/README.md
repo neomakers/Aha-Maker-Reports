@@ -268,43 +268,43 @@ AI辅助流程必须加入：提示词/生成代码 → 编译/复现 → 学生
 合规补充：本报告仅为研发表，不能替代法律审查。尤其关注模型平台的NC、SA、商业模型许可，社区照片不得自动复制进营销材料。  
 ## 07 原始证据与资源索引  
 检索与访问日期：2026-11-06。以下均为作者、项目组织或官方课程的可点击原始链接；标为“报道”的用于确认报道时间而非证明项目首次发布。  
-[micro:bit 触摸吉他](https://www.microbit.org/projects/make-it-code-it/guitar-1-touch-tunes/)  micro:bit 官方触摸吉他课程（教程/程序/许可）  打开原始链接  
-[https://www.microbit.org/projects/make-it-code-it/guitar-1-touch-tunes/  
-[micro:bit 音程升级](https://www.microbit.org/projects/make-it-code-it/guitar-3-octaves/)  micro:bit 音程/八度升级课程  打开原始链接  
-[https://www.microbit.org/projects/make-it-code-it/guitar-3-octaves/  
-[Scratch 吉他](https://www.microbit.org/projects/make-it-code-it/scratch-guitar/)  micro:bit Scratch 吉他版  打开原始链接  
-[https://www.microbit.org/projects/make-it-code-it/scratch-guitar/  
-[Nestbolt 源码](https://github.com/skulitom/Nestbolt)  Nestbolt 源码与技术/测试说明  打开原始链接  
-[https://github.com/skulitom/Nestbolt  
-[Nestbolt 演示](https://skulitom.github.io/Nestbolt/)  Nestbolt 浏览器演示  打开原始链接  
-[https://skulitom.github.io/Nestbolt/  
-[Nestbolt 依赖声明](https://github.com/skulitom/Nestbolt/blob/main/THIRD_PARTY_NOTICES)  Nestbolt 第三方依赖许可  打开原始链接  
-[https://github.com/skulitom/Nestbolt/blob/main/THIRD_PARTY_NOTICES  
-[ESP32 Fluid 源码](https://github.com/Vateva/Esp32FluidSimulation8x8)  ESP32流体模拟 GitHub（BOM、引脚、项目说明）  打开原始链接  
-[https://github.com/Vateva/Esp32FluidSimulation8x8  
-[ESP32 Fluid 外壳](https://github.com/Vateva/Esp32FluidSimulation8x8/tree/main/Casing%20and%20box)  ESP32 Fluid: 机壳设计目录  打开原始链接  
-[https://github.com/Vateva/Esp32FluidSimulation8x8/tree/main/Casing%20and%20box  
-[ESP32 Fluid 手册](https://github.com/Vateva/Esp32FluidSimulation8x8/blob/main/8x8FluidSimulationUserManual.pdf)  ESP32 Fluid: 用户手册PDF  打开原始链接  
-[https://github.com/Vateva/Esp32FluidSimulation8x8/blob/main/8x8FluidSimulationUserManual.pdf  
-[Suutari20 源码](https://github.com/Squalius-cephalus/suutari20)  Suutari20 原仓库（KiCad/Gerber/固件/许可）  打开原始链接  
-[https://github.com/Squalius-cephalus/suutari20  
-[Suutari20 装配](https://github.com/Squalius-cephalus/suutari20/wiki/Getting-started)  Suutari20 原作者Build Guide导航  打开原始链接  
-[https://github.com/Squalius-cephalus/suutari20/wiki/Getting-started  
-[Suutari20 报道](https://www.open-electronics.org/suutari20-a-modular-macro-keyboard-built-on-3-5-mm-audio-jacks/)  Suutari20 2026-10-31报道（日期归类）  打开原始链接  
-[https://www.open-electronics.org/suutari20-a-modular-macro-keyboard-built-on-3-5-mm-audio-jacks/  
-[XGO Duck 硬件](https://github.com/LuwuDynamics/xgoduck_hardware)  XGO Duck 硬件/结构/BOM/装配  打开原始链接  
-[https://github.com/LuwuDynamics/xgoduck_hardware  
-[XGO Duck 许可](https://github.com/LuwuDynamics/xgoduck_hardware/blob/master/LICENSING.md)  XGO Duck 明确的许可状态文件  打开原始链接  
-[https://github.com/LuwuDynamics/xgoduck_hardware/blob/master/LICENSING.md  
-[XGO Duck 程序](https://github.com/LuwuDynamics/xgoduck_runtime_arduino)  XGO Duck Arduino运行仓库  打开原始链接  
-[https://github.com/LuwuDynamics/xgoduck_runtime_arduino  
-[XGO Duck 报道](https://www.open-electronics.org/xgo-duck-the-open-source-robot-duck-that-walks-with-neural-policies/)  XGO Duck 2026-11-01报道  打开原始链接  
-[https://www.open-electronics.org/xgo-duck-the-open-source-robot-duck-that-walks-with-neural-policies/  
-[IronEar 源码](https://github.com/PionEars/IronEar)  IronEar 团队GitHub与分阶段公开清单  打开原始链接  
-[https://github.com/PionEars/IronEar  
-[IronEar 官方](https://www.crowdsupply.com/ironear-technologies/ironear)  IronEar 官方众筹/许可说明  打开原始链接  
-[https://www.crowdsupply.com/ironear-technologies/ironear  
-[IronEar 报道](https://www.open-electronics.org/ironear-the-privacy-first-audio-sensor-that-recognises-500-sounds-on-device/)  IronEar 2026-11-03报道  打开原始链接  
-[https://www.open-electronics.org/ironear-the-privacy-first-audio-sensor-that-recognises-500-sounds-on-device/  
+[micro:bit 触摸吉他](https://www.microbit.org/projects/make-it-code-it/guitar-1-touch-tunes/)  micro:bit 官方触摸吉他课程（教程/程序/许可）  
+
+[micro:bit 音程升级](https://www.microbit.org/projects/make-it-code-it/guitar-3-octaves/)  micro:bit 音程/八度升级课程  
+
+[Scratch 吉他](https://www.microbit.org/projects/make-it-code-it/scratch-guitar/)  micro:bit Scratch 吉他版  
+
+[Nestbolt 源码](https://github.com/skulitom/Nestbolt)  Nestbolt 源码与技术/测试说明  
+
+[Nestbolt 演示](https://skulitom.github.io/Nestbolt/)  Nestbolt 浏览器演示  
+
+[Nestbolt 依赖声明](https://github.com/skulitom/Nestbolt/blob/main/THIRD_PARTY_NOTICES)  Nestbolt 第三方依赖许可  
+
+[ESP32 Fluid 源码](https://github.com/Vateva/Esp32FluidSimulation8x8)  ESP32流体模拟 GitHub（BOM、引脚、项目说明）  
+
+[ESP32 Fluid 外壳](https://github.com/Vateva/Esp32FluidSimulation8x8/tree/main/Casing%20and%20box)  ESP32 Fluid: 机壳设计目录  
+
+[ESP32 Fluid 手册](https://github.com/Vateva/Esp32FluidSimulation8x8/blob/main/8x8FluidSimulationUserManual.pdf)  ESP32 Fluid: 用户手册PDF  
+
+[Suutari20 源码](https://github.com/Squalius-cephalus/suutari20)  Suutari20 原仓库（KiCad/Gerber/固件/许可）  
+
+[Suutari20 装配](https://github.com/Squalius-cephalus/suutari20/wiki/Getting-started)  Suutari20 原作者Build Guide导航  
+
+[Suutari20 报道](https://www.open-electronics.org/suutari20-a-modular-macro-keyboard-built-on-3-5-mm-audio-jacks/)  Suutari20 2026-10-31报道（日期归类）  
+
+[XGO Duck 硬件](https://github.com/LuwuDynamics/xgoduck_hardware)  XGO Duck 硬件/结构/BOM/装配  
+
+[XGO Duck 许可](https://github.com/LuwuDynamics/xgoduck_hardware/blob/master/LICENSING.md)  XGO Duck 明确的许可状态文件  
+
+[XGO Duck 程序](https://github.com/LuwuDynamics/xgoduck_runtime_arduino)  XGO Duck Arduino运行仓库  
+
+[XGO Duck 报道](https://www.open-electronics.org/xgo-duck-the-open-source-robot-duck-that-walks-with-neural-policies/)  XGO Duck 2026-11-01报道  
+
+[IronEar 源码](https://github.com/PionEars/IronEar)  IronEar 团队GitHub与分阶段公开清单  
+
+[IronEar 官方](https://www.crowdsupply.com/ironear-technologies/ironear)  IronEar 官方众筹/许可说明  
+
+[IronEar 报道](https://www.open-electronics.org/ironear-the-privacy-first-audio-sensor-that-recognises-500-sounds-on-device/)  IronEar 2026-11-03报道  
+
 完 / AHA MAKER RESEARCH 008  
 核查日 2026-11-06    ·
