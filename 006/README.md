@@ -1,6 +1,6 @@
 # 阿哈课程与创客项目研究报告 第006期
 
-> 以下正文按原版研究报告文字归档，未压缩为机械式项目摘要。由于Word版式转换，部分表格在Markdown中以逐行文字呈现；以原始文档为准。
+> 阅读版：保留原报告的项目分析与研发建议，已将文献编号改为可直接点击的来源链接。原Word表格转换为逐行文本，后续可继续优化排版。
 
 AHA / MAKER RESEARCH  
   
@@ -132,25 +132,25 @@ Bezalel 触觉阵列    高阶观察           制造、可靠性与权利声明
   
 尺寸不能混用。 PixelIt 官方硬件文档明确以 8×32 优化；其他尺寸需要改固件。原版 16×16 项目采用  
   
-WLED，因此不能把两套方案直接写成同一条即装即用课程。 [02] [05] [20]  
+WLED，因此不能把两套方案直接写成同一条即装即用课程。 [PixelIt 硬件清单](https://pixelit-project.github.io/hardware.html) [WLED 矩阵映射](https://kno.wled.ge/advanced/mapping/) [LED 矩阵报道](https://blog.adafruit.com/2026/10/22/16x16-wled-led-matrix-esp8266-esp32-with-4x-8x8-ws2812-panels-3dthursday-3dprinting/)  
   
 打印文件不等于设备适配。 USB Hub 原版面板要求至少 237×237×12 毫米成型空间，并以对角方向放  
   
-置。阿哈设备型号尚未确认，不能先承诺原版可打印。 [18]  
+置。阿哈设备型号尚未确认，不能先承诺原版可打印。 [USB Hub CAD](https://learn.adafruit.com/4-port-usb-hub-for-ikea-mittzon-desk/cad-files)  
   
 软件不等于完整机械方案。 Sandify 负责轨迹生成；Dune Weaver 示例采用极坐标机构。图案、控制器  
   
-和机构之间仍有格式、范围与校准工作。 [07] [10]  
+和机构之间仍有格式、范围与校准工作。 [Sandify 源码](https://github.com/jeffeb3/sandify) [Dune Weaver](https://github.com/tuanchris/dune-weaver)  
   
 下载入口不等于商业许可。 OpenScan 固件、制造模型与其他配套资源需分开查验；原作者模型页读取  
   
-受限的机械盒，本轮仍不升级为正式课程方案。 [13] [16] [22] [24]  
+受限的机械盒，本轮仍不升级为正式课程方案。 [OpenScan 设计](https://github.com/OpenScan-org/OpenScan-Design) [OpenScan2 固件](https://github.com/OpenScan-org/OpenScan2) [蜘蛛盒模型](https://makerworld.com/en/models/640947-halloween-trick-or-treat-spider-candy-box) [GitHub 许可证说明](https://docs.github.com/zh/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)  
   
 本期新资料与经典项目的边界  
   
 USB Hub 教程可确认发布于 10 月 19 日；矩阵结构和机械盒可确认在 10 月 22 日被社区精选。PixelIt、  
   
-Sandify、OpenScan 和 Bezalel 按已有项目研究，不宣称在该周首发。 [17] [20] [21]  
+Sandify、OpenScan 和 Bezalel 按已有项目研究，不宣称在该周首发。 [USB Hub 教程](https://learn.adafruit.com/4-port-usb-hub-for-ikea-mittzon-desk?view=all) [LED 矩阵报道](https://blog.adafruit.com/2026/10/22/16x16-wled-led-matrix-esp8266-esp32-with-4x-8x8-ws2812-panels-3dthursday-3dprinting/) [机械蜘蛛盒报道](https://blog.adafruit.com/2026/10/22/halloween-trick-or-treat-spider-candy-box-pop-up-spider-mechanism-3dthursday-3dprinting/)  
   
   
   
@@ -172,11 +172,11 @@ PixelIt 面向 ESP8266/ESP32 与 WS2812B 矩阵，提供网页配置和 JSON API
   
 件页提示：8×32 为优化尺寸，其他尺寸需要修改固件。四块 8×8 并不自动意味着可以不改程序拼成  
   
-16×16。 [01] [02] [03] [04]  
+16×16。 [PixelIt 源码](https://github.com/pixelit-project/PixelIt) [PixelIt 硬件清单](https://pixelit-project.github.io/hardware.html) [PixelIt API](https://pixelit-project.github.io/api.html) [PixelIt 许可证](https://github.com/pixelit-project/PixelIt/blob/main/LICENSE)  
   
 WLED 则提供像素重映射与矩阵映射文档，可作为 16×16 艺术灯候选。两者分别有自己的设置和接口；  
   
-本次未在实物上验证任一配置。第三方框架的许可也不能由固件许可代替。 [05] [06]  
+本次未在实物上验证任一配置。第三方框架的许可也不能由固件许可代替。 [WLED 矩阵映射](https://kno.wled.ge/advanced/mapping/) [WLED 接线指南](https://kno.wled.ge/basics/wiring-guides/)  
   
 建议方案与材料  
   
@@ -188,7 +188,7 @@ WLED 则提供像素重映射与矩阵映射文档，可作为 16×16 艺术灯�
   
 供电必须按所购 LED、电源、连接线和允许亮度逐项核算。教师先完成接线与电源验证，不能让矩阵负  
   
-载通过控制板细小供电路径。低亮度演示通过，不等于全亮度可长期使用。 [02] [06]  
+载通过控制板细小供电路径。低亮度演示通过，不等于全亮度可长期使用。 [PixelIt 硬件清单](https://pixelit-project.github.io/hardware.html) [WLED 接线指南](https://kno.wled.ge/basics/wiring-guides/)  
   
 阶段           学生任务                                  教师观察的能力  
   
@@ -245,13 +245,13 @@ WLED 接线指南
   
 Sandify 的核心是生成适合钢球绘图的连续、有边界轨迹，并导出到相应设备。软件采用 MIT 许可，但  
   
-LICENSE 明确把 Logo 资源排除在该许可之外。它不是完整机械制造包。 [07] [08]  
+LICENSE 明确把 Logo 资源排除在该许可之外。它不是完整机械制造包。 [Sandify 源码](https://github.com/jeffeb3/sandify) [Sandify 许可证](https://github.com/jeffeb3/sandify/blob/master/LICENSE)  
   
 Dune Weaver 是另一条可参考的实现路线：树莓派负责界面/图案处理，ESP32 类控制器运行运动固件；  
   
 其示例采用 Theta/Rho 极坐标，不是把任意 XY 轨迹直接发送即可。该项目许可说明还并列商业许可条  
   
-款，不能仅凭仓库 GPL 标签作完整复用判断。 [10] [11]  
+款，不能仅凭仓库 GPL 标签作完整复用判断。 [Dune Weaver](https://github.com/tuanchris/dune-weaver) [Dune Weaver 许可证](https://github.com/tuanchris/dune-weaver/blob/main/LICENSE)  
   
 阿哈的最小可行课程  
   
@@ -322,12 +322,12 @@ OpenScan Mini 通过摄影测量采集照片，官方描述约 9 厘米级扫描
   
 还需交给重建软件处理。官网将精度与样品准备、使用者能力关联，不能把展示精度直接写成课堂保  
   
-证。 [12]  
+证。 [OpenScan Mini](https://openscan.eu/pages/openscan-mini)  
   
 设计仓库区分 Mini V1 与 V2，列出不同 BOM 和电子配置；OpenScan2 固件仓库标记 GPL-3.0。制造模  
   
-型、PCB 与处理服务仍需各自检查许可和版本，本次没有完成全部制造文件的授权核查。 [13] [14] [15]  
-[16]  
+型、PCB 与处理服务仍需各自检查许可和版本，本次没有完成全部制造文件的授权核查。 [OpenScan 设计](https://github.com/OpenScan-org/OpenScan-Design) [OpenScan Mini V1 文件](https://github.com/OpenScan-org/OpenScan-Design/tree/main/files/Mini/V1) [OpenScan 文档](https://openscan-org.github.io/OpenScan-Doc/)  
+[OpenScan2 固件](https://github.com/OpenScan-org/OpenScan2)  
   
   
 关键问题不是“会不会转”，而是“能否完成闭环”  
@@ -399,8 +399,8 @@ OpenScan2 固件仓库
   
 Ruiz Brothers 的教程可核实发布于 2026 年 10 月 19 日，使用 CH334F 模块、四个 USB-A 插座和 3D 打  
   
-印桌面面板，提供接线、3MF 与 CAD 源文件入口。原面板要求至少 237×237×12 毫米成型空间。 [17]  
-[18] [19]  
+印桌面面板，提供接线、3MF 与 CAD 源文件入口。原面板要求至少 237×237×12 毫米成型空间。 [USB Hub 教程](https://learn.adafruit.com/4-port-usb-hub-for-ikea-mittzon-desk?view=all)  
+[USB Hub CAD](https://learn.adafruit.com/4-port-usb-hub-for-ikea-mittzon-desk/cad-files) [CH334F 模块](https://learn.adafruit.com/adafruit-ch334f-mini-4-port-usb-hub-breakout/overview)  
   
   
 这个项目的课程价值在于“把已有电子模块做成适合真实场景的产品”。它不要求学生重新发明 USB 协  
@@ -435,7 +435,7 @@ Ruiz Brothers 的教程可核实发布于 2026 年 10 月 19 日，使用 CH334F
   
 四个接口，记录插拔和使用中断。不能默认“有四个口”就有四倍充电能力，负载范围按模块与上游供  
   
-电条件确定。 [17] [19]  
+电条件确定。 [USB Hub 教程](https://learn.adafruit.com/4-port-usb-hub-for-ikea-mittzon-desk?view=all) [CH334F 模块](https://learn.adafruit.com/adafruit-ch334f-mini-4-port-usb-hub-breakout/overview)  
   
 若焊接和排错占去绝大部分课堂时间，低龄版本应改为教师预装电路、学生专注外壳设计。照片、教程  
   
@@ -468,7 +468,7 @@ Ruiz Brothers 的教程可核实发布于 2026 年 10 月 19 日，使用 CH334F
   
 10 月 22 日 Adafruit 确有该机械蜘蛛盒的精选文章，并指向原作者 MakerWorld 模型。原模型页本轮读  
   
-取受限，因此不据转载确认商业许可、完整文件包和原始发布日期。 [21] [22]  
+取受限，因此不据转载确认商业许可、完整文件包和原始发布日期。 [机械蜘蛛盒报道](https://blog.adafruit.com/2026/10/22/halloween-trick-or-treat-spider-candy-box-pop-up-spider-mechanism-3dthursday-3dprinting/) [蜘蛛盒模型](https://makerworld.com/en/models/640947-halloween-trick-or-treat-spider-candy-box)  
   
 阿哈判断： 适合作为 8—12 岁、2 节机械体验课的灵感。教学目标应是“一个输入动作如何改变另一个  
   
@@ -493,7 +493,7 @@ Bezalel：研究机械阵列，不误当课堂成熟平台
   
 作者仓库提供 3×3 触觉阵列原型说明，采用 GRBL 1.1h 控制，并声明 STL 为 CC BY 4.0、代码为  
   
-Apache 2.0。机构通过少量执行器驱动多个触觉单元，适合研究执行器数量与机构复杂度的取舍。 [23]  
+Apache 2.0。机构通过少量执行器驱动多个触觉单元，适合研究执行器数量与机构复杂度的取舍。 [Bezalel 源码](https://github.com/pedrosacramento/bezalel)  
   
 阿哈判断： 教师或 14 岁以上研究小组可用 4—8 节研究机械显示与无障碍交互；不承诺已具备完整课堂  
   
@@ -559,13 +559,13 @@ USB Hub         低—中 / 中              结构设计与装配质量        
 项目/资源           本次已见证据                      仍需确认  
   
   
-PixelIt         MIT 软件许可证 [04]              外壳模型、教材与所选固件版本。  
+PixelIt         MIT 软件许可证 [PixelIt 许可证](https://github.com/pixelit-project/PixelIt/blob/main/LICENSE)              外壳模型、教材与所选固件版本。  
   
   
-Sandify         MIT；Logo 另有许可 [08]          额外图案、机械方案、Dune Weaver 适用条款。  
+Sandify         MIT；Logo 另有许可 [Sandify 许可证](https://github.com/jeffeb3/sandify/blob/master/LICENSE)          额外图案、机械方案、Dune Weaver 适用条款。  
   
   
-OpenScan        固件 GPL-3.0 [16]             制造设计、PCB 及处理服务分别核对。  
+OpenScan        固件 GPL-3.0 [OpenScan2 固件](https://github.com/OpenScan-org/OpenScan2)             制造设计、PCB 及处理服务分别核对。  
   
   
 USB Hub         作者教程与 CAD 下载入口 [17–18]      模型、图片、教程文本具体复用条件。  
@@ -574,9 +574,9 @@ USB Hub         作者教程与 CAD 下载入口 [17–18]      模型、图片�
 机械盒             转载及原模型链接 [21–22]            原页许可与文件内容未核实。  
   
   
-Bezalel         作者声明 STL/代码许可 [23]          专利声明、版本差异与当地适用性。  
+Bezalel         作者声明 STL/代码许可 [Bezalel 源码](https://github.com/pedrosacramento/bezalel)          专利声明、版本差异与当地适用性。  
   
-授权表属于来源核查，不是法律意见。公开可下载、仓库可见、作者自称开源，不能代替对所用文件许可的逐项确认。[24]  
+授权表属于来源核查，不是法律意见。公开可下载、仓库可见、作者自称开源，不能代替对所用文件许可的逐项确认。[GitHub 许可证说明](https://docs.github.com/zh/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)  
   
 不做的事： 不把所有作品都强接 AI；不按语言割裂同一项目；不把 3D 打印变成整班等待；不以老师修  
   
@@ -679,62 +679,62 @@ OpenScan 流程评估   方式                         购。
 附录｜可点击资料索引（一）  
 访问核查日期：2026-10-28。点击蓝色名称打开原网页。仓库内容可能更新；原模型访问受限或动态页面均已单独标注。  
   
-[01] PixelIt 项目与版本记录  
+[PixelIt 源码](https://github.com/pixelit-project/PixelIt) PixelIt 项目与版本记录  
   
 官方仓库；平台、功能与源码入口。  
   
   
-[02] PixelIt 硬件与材料清单  
+[PixelIt 硬件清单](https://pixelit-project.github.io/hardware.html) PixelIt 硬件与材料清单  
   
 官方文档；8×32 优化、其他尺寸需改固件、供电与接线。  
   
   
-[03] PixelIt API 文档  
+[PixelIt API](https://pixelit-project.github.io/api.html) PixelIt API 文档  
   
 官方文档；外部程序发送显示内容的接口。  
   
   
-[04] PixelIt MIT 许可证  
+[PixelIt 许可证](https://github.com/pixelit-project/PixelIt/blob/main/LICENSE) PixelIt MIT 许可证  
   
 软件许可原文；不能代替第三方模型许可。  
   
   
-[05] WLED 映射文档  
+[WLED 矩阵映射](https://kno.wled.ge/advanced/mapping/) WLED 映射文档  
   
 官方文档；像素映射、蛇形排列与矩阵尺寸。  
   
   
-[06] WLED 接线指南  
+[WLED 接线指南](https://kno.wled.ge/basics/wiring-guides/) WLED 接线指南  
   
 官方文档；另行核对选用控制器、电源及电平转换。  
   
   
-[07] Sandify 源码与使用说明  
+[Sandify 源码](https://github.com/jeffeb3/sandify) Sandify 源码与使用说明  
   
 官方仓库；连续轨迹、工作范围、生成与导出流程。  
   
   
-[08] Sandify 许可证  
+[Sandify 许可证](https://github.com/jeffeb3/sandify/blob/master/LICENSE) Sandify 许可证  
   
 MIT 许可；文件明确将 Logo 排除在该许可之外。  
   
   
-[09] Sandify 在线工具  
+[Sandify 在线工具](https://sandify.org/) Sandify 在线工具  
   
 官方应用入口；动态网页，本轮未进行交互测试。  
   
   
-[10] Dune Weaver 系统与机械路线  
+[Dune Weaver](https://github.com/tuanchris/dune-weaver) Dune Weaver 系统与机械路线  
   
 作者仓库；树莓派/ESP32 分工、极坐标与制造资料入口。  
   
   
-[11] Dune Weaver 许可说明  
+[Dune Weaver 许可证](https://github.com/tuanchris/dune-weaver/blob/main/LICENSE) Dune Weaver 许可说明  
   
 许可原文并列 GPL 与商业许可说明；适用边界需进一步确认。  
   
   
-[12] OpenScan Mini 官方介绍  
+[OpenScan Mini](https://openscan.eu/pages/openscan-mini) OpenScan Mini 官方介绍  
   
 官方说明；扫描范围、摄影测量流程及处理选项。  
   
@@ -750,62 +750,62 @@ MIT 许可；文件明确将 Logo 排除在该许可之外。
 附录｜可点击资料索引（二）  
 访问核查日期：2026-10-28。点击蓝色名称打开原网页。仓库内容可能更新；原模型访问受限或动态页面均已单独标注。  
   
-[13] OpenScan 制造设计与版本  
+[OpenScan 设计](https://github.com/OpenScan-org/OpenScan-Design) OpenScan 制造设计与版本  
   
 官方仓库；Mini V1、V2 及对应 BOM 和装配入口。  
   
   
-[14] OpenScan Mini V1 制造文件  
+[OpenScan Mini V1 文件](https://github.com/OpenScan-org/OpenScan-Design/tree/main/files/Mini/V1) OpenScan Mini V1 制造文件  
   
 官方文件目录；仅作为版本明确的制造入口。  
   
   
-[15] OpenScan 文档中心  
+[OpenScan 文档](https://openscan-org.github.io/OpenScan-Doc/) OpenScan 文档中心  
   
 官方文档；组装、固件与操作的进一步核对入口。  
   
   
-[16] OpenScan2 固件仓库  
+[OpenScan2 固件](https://github.com/OpenScan-org/OpenScan2) OpenScan2 固件仓库  
   
 官方仓库；GPL-3.0 标记及关联硬件、云处理仓库。  
   
   
-[17] 四口 USB Hub 完整教程  
+[USB Hub 教程](https://learn.adafruit.com/4-port-usb-hub-for-ikea-mittzon-desk?view=all) 四口 USB Hub 完整教程  
   
 作者教程；发布 2026-10-19，页面标记更新 2026-10-21。  
   
   
-[18] 四口 USB Hub CAD 与打印要求  
+[USB Hub CAD](https://learn.adafruit.com/4-port-usb-hub-for-ikea-mittzon-desk/cad-files) 四口 USB Hub CAD 与打印要求  
   
 作者教程；3MF、设计源文件及 237×237×12 毫米成型空间要求。  
   
   
-[19] CH334F 模块官方说明  
+[CH334F 模块](https://learn.adafruit.com/adafruit-ch334f-mini-4-port-usb-hub-breakout/overview) CH334F 模块官方说明  
   
 模块说明；端口构成、使用边界，非整机成本报价。  
   
   
-[20] 16×16 WLED 结构社区精选  
+[LED 矩阵报道](https://blog.adafruit.com/2026/10/22/16x16-wled-led-matrix-esp8266-esp32-with-4x-8x8-ws2812-panels-3dthursday-3dprinting/) 16×16 WLED 结构社区精选  
   
 2026-10-22 转载/精选；仅用于核对推荐日期和作者模型线索。  
   
   
-[21] 机械蜘蛛盒社区精选  
+[机械蜘蛛盒报道](https://blog.adafruit.com/2026/10/22/halloween-trick-or-treat-spider-candy-box-pop-up-spider-mechanism-3dthursday-3dprinting/) 机械蜘蛛盒社区精选  
   
 2026-10-22 转载/精选；不是原始发布时间或商业许可证明。  
   
   
-[22] 机械蜘蛛盒原作者模型  
+[蜘蛛盒模型](https://makerworld.com/en/models/640947-halloween-trick-or-treat-spider-candy-box) 机械蜘蛛盒原作者模型  
   
 转载指向的原作者入口；本轮读取受限，许可与文件包待人工确认。  
   
   
-[23] Bezalel 源码与作者声明  
+[Bezalel 源码](https://github.com/pedrosacramento/bezalel) Bezalel 源码与作者声明  
   
 作者仓库；3×3 原型、GRBL 及许可声明；专利信息仅按作者自述处理。  
   
   
-[24] GitHub：仓库许可说明  
+[GitHub 许可证说明](https://docs.github.com/zh/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) GitHub：仓库许可说明  
   
 官方帮助；公开可见与授予复用许可的区别。  
   
