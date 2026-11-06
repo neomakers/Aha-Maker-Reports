@@ -6,7 +6,7 @@
 
 ## [NeoPixel Brick Wreath：可换主题的互动灯饰](https://learn.adafruit.com/holiday-brick-wreath)
 
-：NeoPixel Brick Holiday Wreath
+NeoPixel Brick Holiday Wreath
 
 项目定位：这是由Adafruit Ruiz Brothers发布的3D打印可拼装灯饰。官方使用Sparkle Motion Mini（ESP32）、12个JST插接NeoPixel发光模块、连接线和可打印的枝条/扩散器结构；WLED直接提供网页灯效和音乐响应。官方说明无需焊接，结构允许修改节庆外观。
 
@@ -32,7 +32,7 @@ WLED代码仓库为EUPL-1.2；Adafruit本项目CAD/图像的独立商用条款�
 
 阿哈改造方案：做“主题可替换的互动灯饰”
 
-〔建议〕将节庆花环改造成四个可更换主题：星空、花草、房屋与姓名。低龄班先拼装和改灯效，高年龄班改成自己的CAD图案、编写WLED API或Python脚本；可用英语描述灯光效果，由AI生成第一版，再让学生验证。适合8—13岁；体验2节，正式4—6节。
+将节庆花环改造成四个可更换主题：星空、花草、房屋与姓名。低龄班先拼装和改灯效，高年龄班改成自己的CAD图案、编写WLED API或Python脚本；可用英语描述灯光效果，由AI生成第一版，再让学生验证。适合8—13岁；体验2节，正式4—6节。
 
 教学阶段 / 课时
 
@@ -68,7 +68,7 @@ Python / HTTP控制＋声音响应
 
 ## [4WD Radar Robot：会探路的小车](https://github.com/lucaeffe03/4WD-SLAM-Radar-2D-Robot-Car)
 
-：4WD SLAM Radar 2D Robot Car
+4WD SLAM Radar 2D Robot Car
 
 作者Luca Fagioli使用Arduino UNO R4 WiFi、4WD TT电机底盘、L298N、SG90舵机、HC-SR04超声波和底部3个IR传感器；通过网页展示扫描结果、车辆状态与二维墙体示意。仓库可见Arduino源码、map.html和GPL-3.0许可证，但未见完整可打印底盘CAD。
 
@@ -128,7 +128,7 @@ L5—6 · 2节
 
 ## [Skylon：3D打印桌面风洞](https://github.com/RevanBamoki/skylon-wind-tunnel)
 
-：Skylon V1
+Skylon V1
 
 Skylon V1将风道结构、教学Arduino采集与Python可视化放进一个仓库，明确具有BOM、Fusion 360 F3Z、STEP、STL、装配说明、Arduino Uno/Nano双BMP180采集程序及Python仪表盘。仓库标注MIT许可证，并直言数据“仅具演示性质、尚未校准”。
 
@@ -208,7 +208,7 @@ USB摄像头记录亮度曲线
 
 ## [realisticPM：会显示空气颗粒的装置](https://github.com/WeSpeakEnglish/realisticPM)
 
-：超大号PM2.5空气质量显示器
+超大号PM2.5空气质量显示器
 
 原作者WeSpeakEnglish使用XIAO SAMD21、SPS30或Panasonic颗粒物传感器和大型LED七段板，把室内PM读数做成远距离可读的实时装置；还提供USB串口数据输出。GitHub可定位PCB/机械/Arduino文件，但根目录未发现独立LICENSE，故不能把“公开源码”写成“允许商用改编”。
 
@@ -222,7 +222,7 @@ Iván Miranda制作巨型3D打印机械滚筒，通过内外步进机构分选�
 
 ## [SpooBu：用重力自动回卷的料盘](https://github.com/kevinakasam/SpooBu)
 
-：靠重力自动回卷的3D打印料盘机构
+靠重力自动回卷的3D打印料盘机构
 
 kevinakasam的SpooBu使用计重锤和齿轮，耗材放线时抬升配重；回抽时利用重力回转料盘。GitHub包含参数化CAD、STL、GPL-3.0许可与演示说明，作者也在README承认BOM尚未完整整理；至少需要3个608轴承、M8螺栓等。是一个很适合3D打印实验室的“真正有功能的机械”。
 
@@ -280,7 +280,7 @@ Skylon BOM、尺寸清单、风扇防护和采样脚本
 
 课程组必须收集的数据
 
-〔建议〕每台样机建立一张《研发记录卡》：Git仓库与commit SHA、依赖版本、BOM币种/报价日期、打印时间与材料克重、装配人数与时长、故障及修复、可复制结果次数、8—12岁实际操作比例（若做试教）、许可证明链接。这样以后同一课程不会因为教师换人就无法复现。
+每台样机建立一张《研发记录卡》：Git仓库与commit SHA、依赖版本、BOM币种/报价日期、打印时间与材料克重、装配人数与时长、故障及修复、可复制结果次数、8—12岁实际操作比例（若做试教）、许可证明链接。这样以后同一课程不会因为教师换人就无法复现。
 
 教学路径：从作品到知识
 
